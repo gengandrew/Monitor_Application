@@ -1,0 +1,19 @@
+﻿<Application x:Class="TimeTracker.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TimeTracker"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="/PresentationFramework.Luna, Version=4.0.0.0,
+                    Culture=neutral, PublicKeyToken=31bf3856ad364e35,
+                    ProcessorArchitecture=MSIL;component/themes/luna.normalcolor.xaml"/>-->
+                <ResourceDictionary Source="\PresentationFramework.Aero, Version=4.0.0.0,
+                    Culture=neutral, PublicKeyToken=31bf3856ad364e35,
+                    ProcessorArchitecture=MSIL;component/themes/Aero.normalcolor.xaml"/>
+                <!--<ResourceDictionary Source="C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF\PresentationFramework.Aero2;component\themes\aero2.normalcolor.xaml" /> -->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

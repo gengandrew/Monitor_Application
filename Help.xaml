@@ -1,0 +1,22 @@
+﻿<Window x:Class="TimeTracker.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:TimeTracker"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="Help" Height="275" Width="330" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Border CornerRadius="8" BorderThickness="1" BorderBrush="#545454" Background="WhiteSmoke" MouseLeftButtonDown="DragEvent">
+        <Grid>
+            <TextBlock HorizontalAlignment="Center" Text="Application Help" VerticalAlignment="Top" Margin="0,10,0,0" FontWeight="Bold" FontSize="15" Foreground="#151515"></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Text="Steps for Inserting into Oven: &#x0a;    1) From the top drop down bar please select  &#x0a;    the desired Oven. &#x0a;    2) An Oven Grid should now appear please &#x0a;    left click on desired cell. &#x0a;    3) From the new popup screen please scan &#x0a;    in all the container's bar codes. &#x0a;    4) Once complete on the recipes drop down &#x0a;    please select the desired recipe  &#x0a;    5) Place in any and all comments as needed  &#x0a;    and click submit to begin the timer." VerticalAlignment="Top" Margin="20,35,0,0" FontSize="13" FontWeight="DemiBold" Foreground="Black"/>
+            <CheckBox Name="MessCheckBox" Click="MessCheckBox_Click" Content="Don't show me this message again" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,235,0,0" Height="auto" Width="210"/>
+            <Button VerticalAlignment="Top" HorizontalAlignment="Right" Width="16" Height="16" Margin="0,8,8,0" Background="IndianRed" Click="Button_Click_Exit" BorderBrush="Black" Foreground="White">
+                <materialDesign:PackIcon Kind ="Close" Width="13" Height="13" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

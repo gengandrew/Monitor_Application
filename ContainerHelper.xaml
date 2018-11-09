@@ -1,0 +1,24 @@
+﻿<Window x:Class="TimeTracker.ContainerHelper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeTracker"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="ContainerHelper" Height="350" Width="540" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" KeyDown="Submit_KeyDown">
+    <Border CornerRadius="8" BorderThickness="1" BorderBrush="#545454" Background="#99A099" MouseLeftButtonDown="DragEvent">
+        <Grid>
+            <TextBox Name="Container" HorizontalAlignment="Left" Height="296" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="225" Margin="25,32,0,0" Background="LightGray" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" AcceptsReturn="True"/>
+            <ComboBox Name="ComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="25" Margin="330,43,0,0" Background="White"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Recipe:" VerticalAlignment="Top" Margin="275,45,0,0" FontWeight="Bold" FontSize="15" Foreground="#151515"/>
+            <TextBlock Text="Unknown" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,8,12,0" FontWeight="Bold" FontSize="15" Foreground="Black" Name="LocationID"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Containers:" VerticalAlignment="Top" Margin="30,12,0,0" FontWeight="Bold" FontSize="15" Foreground="#151515"/>
+            <Button Name="Submit" Click="Submit_Click" Content="Submit" FontSize="15" FontWeight="DemiBold" Background="Green" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="38" Margin="270,290,0,0"/>
+            <Button Name="Cancel" Click="Cancel_Click" Content="Cancel" FontSize="15" FontWeight="DemiBold" Background="OrangeRed" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="38" Margin="400,290,0,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Comments:" VerticalAlignment="Top" Margin="275,80,0,0" FontWeight="Bold" FontSize="15" Foreground="#151515"/>
+            <TextBox Name="Comments" HorizontalAlignment="Left" Height="175" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Margin="270,101,0,0" Background="LightGray" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" AcceptsReturn="True"/>
+        </Grid>
+    </Border>
+</Window>

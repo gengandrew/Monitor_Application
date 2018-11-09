@@ -1,0 +1,22 @@
+﻿<Window x:Class="TimeTracker.SearchHelp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:TimeTracker"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="SearchHelp" Height="240" Width="330" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Border CornerRadius="8" BorderThickness="1" BorderBrush="#545454" Background="WhiteSmoke" MouseLeftButtonDown="DragEvent">
+        <Grid>
+            <TextBlock HorizontalAlignment="Center" Text="Search Help" VerticalAlignment="Top" Margin="0,10,0,0" FontWeight="Bold" FontSize="15" Foreground="#151515"></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Text="Steps for Searching through Oven: &#x0a;    1) Within the Search Bar enter in either a &#x0a;    specified Comment or Container Number. &#x0a;    2) Left Click on the search Button located &#x0a;    on the right of the search bar. &#x0a;    3) Bellow you will see all search results for &#x0a;    the given comment or container Number. &#x0a;    4) Additional you may right click on a given &#x0a;    row in order to see additional information." VerticalAlignment="Top" Margin="20,35,0,0" FontSize="13" FontWeight="DemiBold" Foreground="Black"/>
+            <CheckBox Name="MessCheckBox" Click="MessCheckBox_Click" Content="Don't show me this message again" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,200,0,0" Height="auto" Width="210"/>
+            <Button VerticalAlignment="Top" HorizontalAlignment="Right" Width="16" Height="16" Margin="0,8,8,0" Background="IndianRed" Click="Button_Click_Exit" BorderBrush="Black" Foreground="White">
+                <materialDesign:PackIcon Kind ="Close" Width="13" Height="13" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

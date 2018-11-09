@@ -1,0 +1,20 @@
+﻿<Window x:Class="TimeTracker.InitInstance"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeTracker"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="InitInstance" Height="135" Width="250" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" KeyDown="Submit_KeyDown">
+    <Border CornerRadius="8" BorderThickness="1" BorderBrush="#545454" Background="#99A099" MouseLeftButtonDown="DragEvent">
+        <Grid>
+            <TextBlock HorizontalAlignment="Center" Text="Add New Instance" VerticalAlignment="Top" Margin="0,8,0,0" FontWeight="Bold" FontSize="15" Foreground="#151515"></TextBlock>
+            <ComboBox Name="ComboBox" HorizontalAlignment="Right" VerticalAlignment="Top" Width="125" Margin="0,40,12,0" Height="25"/>
+            <Button Background="Green" Content="Submit" FontWeight="DemiBold"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="35" Margin="10,80,0,0" Name="Submit" Click="Submit_Click"/>
+            <Button Background="OrangeRed" Content="Cancel" FontWeight="DemiBold" HorizontalAlignment="Right" VerticalAlignment="Top" Width="110" Height="35" Margin="0,80,10,0" Name="Cancel" Click="Cancel_Click"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Choose Oven" VerticalAlignment="Top" Margin="10,42,0,0" FontSize="15" FontWeight="Bold" Foreground="#151515"/>
+        </Grid>
+    </Border>
+</Window>
